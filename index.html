@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personal Portfolio</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script
+			src="https://kit.fontawesome.com/0810b2c534.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<navbar>
+			<div id="navbar">
+				<div class="container">
+					<nav>
+						<img
+							src="images/Lakshya..png"
+							alt="Logo"
+							class="logo"
+						/>
+						<ul id="sidemenu">
+							<li><a href="#header">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="./cv.html">View CV</a></li>
+							<li>
+								<button
+									class="nav-contact-btn"
+									onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+								>
+									Contact
+								</button>
+							</li>
+							
+
+							<i class="fas fa-times" onclick="closemenu()"></i>
+						</ul>
+						<i
+							class="fas fa-solid fa-bars"
+							onclick="openmenu()"
+						></i>
+					</nav>
+				</div>
+			</div>
+		</navbar>
+
+		<main>
+			<section>
+				<!-- -------------------------header Section-------------------------- -->
+				<div id="header">
+					<div class="container">
+						<div class="header-text">
+							<p id="greeting">Hello, I am</p>
+							<h1>Lakshya Madharia</h1>
+							<p>
+								<span>Creative </span>Communicator & IIM-B
+								Student
+							</p>
+							<p id="aboutdesc">
+								Blending business acumen with artistic
+								sensibility to create<br />
+								meaningful work at the intersection of
+								creativity and strategy.
+							</p>
+							<div class="button-group">
+								<a href="#portfolio" class="btn-primary">View My Work</a>
+								<a href="#contact" class="btn-secondary"
+									>Get in Touch</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<!-- -----------------About Section------------------ -->
+
+				<div id="about">
+					<div class="container">
+						<div class="row">
+							<div class="about-col-1">
+								<img
+									src="images/user6.png"
+									alt="User Image"
+									class="user-image"
+								/>
+							</div>
+							<div class="about-col-2">
+								<h1 class="sub-title">About <span>Me</span></h1>
+								<p>
+									Hi, I am Lakshya Madharia - someone who
+									enjoys exploring fresh perspectives,
+									building meaningful connections, and
+									designing ideas that spark impact. With a
+									background in commerce and a growing passion
+									for digital business and entrepreneurship, I
+									find joy in turning simple observations into
+									thoughtful projects. I am always curious,
+									open to collaboration, and driven by the
+									belief that great ideas are born where
+									creativity meets purpose.
+								</p>
+
+								<div class="tab-titles">
+									<p
+										class="tab-links active-link"
+										onclick="opentab('skills')"
+									>
+										Skills
+									</p>
+									<p
+										class="tab-links"
+										onclick="opentab('experience')"
+									>
+										Experience
+									</p>
+									<p
+										class="tab-links"
+										onclick="opentab('education')"
+									>
+										Education
+									</p>
+								</div>
+								<div
+									class="tab-contents active-tab"
+									id="skills"
+								>
+									<ul>
+										<li>
+											<span>Website Development</span
+											><br />Interactive Website
+											Development
+										</li>
+										<li>
+											<span>MySQL</span><br />Querying,
+											organizing, and managing RDBMS using
+											MySQL
+										</li>
+										<li>
+											<span>Python</span><br />Basic
+											Python programming using IDLE and
+											Spyder
+										</li>
+										<li>
+											<span>Accounting</span
+											><br />Building and managing
+											financial statements
+										</li>
+										<li>
+											<span>Desigining</span
+											><br />Designing posters,flyers,
+											carousels, and other graphics using
+											Canva
+										</li>
+									</ul>
+								</div>
+								<div class="tab-contents" id="experience">
+									<ul>
+										<li>
+											<span>May - 2025</span><br />Started
+											a venture that helps local business
+											in their digital onboarding -
+											ListMe. with a budget of Rs 0
+										</li>
+										<li>
+											<span>February - 2025</span
+											><br />Started a homemade fresh
+											mozarella cheese business -
+											Moo-la-la with a budget of Rs 250
+										</li>
+									</ul>
+								</div>
+								<div class="tab-contents" id="education">
+									<ul>
+										<li>
+											<span>2024 - Ongoing</span><br />BBA
+											in Digital Business &
+											entrepreneurship from IIM
+											Bangalore<br />
+											Currently in 1st year
+										</li>
+										<li>
+											<span>2024</span><br />Senior
+											Secondary Education (12th) from
+											Delhi Public School, Bhilai<br />
+											Commerce Stream
+										</li>
+										<li>
+											<span>2022</span><br />Secondary
+											Education (10th) from Delhi Public
+											School, Bhilai
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<!-- --------------------------Expertise Section------------------ -->
+				<div id="services">
+					<div class="container">
+						<h1 class="sub-title">My <span>Expertise</span></h1>
+						<div class="services-list">
+							<div>
+								<i class="fa-solid fa-code"></i>
+								<h2 class="">Web Design</h2>
+								<p>
+									Creating interactive and responsive websites
+									to strengthen digital presence, steadily
+									building better designs, experiences, and
+									solutions every day to inspire growth and
+									lasting impact.
+								</p>
+								<a href="#portfolio" class="learn-more-btn"
+									>Learn more</a
+								>
+							</div>
+							<div>
+								<i class="fa-solid fa-database"></i>
+								<h2>Database Management</h2>
+								<p>
+									Organizing and managing data efficiently
+									using MySQL for robust, scalable, and
+									optimized solutions.
+								</p>
+								<a href="#portfolio" class="learn-more-btn"
+									>Learn more</a
+								>
+							</div>
+							<div>
+								<i class="fa-solid fa-map-location-dot"></i>
+								<h2>Listing Business Online</h2>
+								<p>
+									Assisting businesses in establishing an
+									online presence along with personalized QR
+									solutions.
+								</p>
+								<a href="#portfolio" class="learn-more-btn"
+									>Learn more</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<!-- -----------------Portfolio Section------------------ -->
+
+				<div id="portfolio">
+					<div class="container">
+						<h1 class="sub-title">My <span>Work</span></h1>
+						<div class="work-list">
+							<div class="work">
+								<img src="images/maps4.jpg" alt="Work 1" />
+								<div class="layer">
+									<h3 class="portfolio-card-title">
+										ListMe.
+									</h3>
+									<p>
+										Helping local businesses get discovered
+										by creating verified Google listings and
+										personalized "Review Us" QR codes. It’s
+										all about building visibility, trust,
+										and credibility in today’s digital space
+									</p>
+									<a href="https://www.instagram.com/be.discoverable?igsh=MW0zcjFncHhha2Fvcg=="
+										><i
+											class="fa-solid fa-arrow-up-right-from-square"
+										></i
+									></a>
+								</div>
+							</div>
+							<div class="work">
+								<img src="images/cheese6.jpg" alt="Work 2" />
+								<div class="layer">
+									<h3 class="portfolio-card-title">
+										Moo-la-la
+									</h3>
+									<p>
+										Crafted from rich, full-fat milk, this
+										freshly made mozzarella cheese is all
+										about quality and flavor. Soft,
+										stretchy, and perfectly meltable, it’s
+										an ideal choice to add that creamy,
+										indulgent touch to your homemade pizzas,
+										pastas, and more. It’s real, fresh, and
+										made with care - bringing a gourmet feel
+										to your everyday meals
+									</p>
+									<a href="https://www.instagram.com/moo.la_la?igsh=MWhrZnNyYjdrcGZwcA=="
+										><i
+											class="fa-solid fa-arrow-up-right-from-square"
+										></i
+									></a>
+								</div>
+							</div>
+							<div class="work">
+								<img src="images/YTube1.jpg" alt="Work 3" />
+								<div class="layer">
+									<h3 class="portfolio-card-title">
+										The year I was born
+									</h3>
+									<p>
+										2005 wasn’t just another year - it was
+										packed with events that shaped
+										technology, culture, and the way we
+										connect today. From groundbreaking
+										innovations to iconic moments, it stands
+										out as a year that sparked change and
+										curiosity. Take a closer look at what
+										made 2005 truly unforgettable
+									</p>
+									<a href="https://youtu.be/VMrs8PEsLWM"
+										><i
+											class="fa-solid fa-arrow-up-right-from-square"
+										></i
+									></a>
+								</div>
+							</div>
+						</div>
+						<a href="./articles.html" class="btn">See more</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<!-- --------------------------Contact Section------------------ -->
+
+				<div id="contact">
+					<div class="container">
+						<div class="row">
+							<div class="contact-left">
+								<h1 class="sub-title">
+									Contact <span>Me</span>
+								</h1>
+								<p class="contactdtl">
+									<i class="fas fa-paper-plane"></i
+									>legendarylightninglakshya@gmail.com
+								</p>
+								<p class="contactdtl">
+									<i class="fas fa-phone-square-alt"></i>+91
+									70007-95814
+								</p>
+								<div class="social-icons">
+									<a href="https://github.com/LegendaryLightningLakshya"
+										><i class="fa-brands fa-github"></i
+									></a>
+									<a href="https://youtube.com/@ellarumvangaalwayswelcomesyou?si=RQtIkrKTtXFkwzlG"
+										><i class="fa-brands fa-youtube"></i
+									></a>
+									<a href="https://www.instagram.com/lakshya.madharia?igsh=MXV1ZDNwcjdjdWxx"
+										><i class="fab fa-instagram"></i
+									></a>
+									<a href="https://www.linkedin.com/in/lakshya-m-365633305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+										><i class="fab fa-linkedin"></i
+									></a>
+								</div>
+								<a
+									href="images/my-cv.pdf"
+									download
+									class="btn9 btn2"
+									>Download CV</a
+								>
+							</div>
+							<div class="contact-right">
+								<form name="contact-form">
+									<input
+										type="text"
+										name="name"
+										placeholder="Your Name"
+										required
+									/>
+									<input
+										type="email"
+										name="email"
+										placeholder="Your Email"
+										required
+									/>
+									<textarea
+										name="message"
+										rows="6"
+										placeholder="Your Message"
+									></textarea>
+									<button type="submit" class="btn9 btn2">
+										Send
+									</button>
+								</form>
+								<span id="msg"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<!-- ------------------- Suggestion Section ------------------- -->
+				<div id="suggestions">
+					<div class="container">
+						<section
+							class="suggestion-section reveal"
+							id="suggestion"
+						>
+							<div class="container">
+								<div class="suggestion-card">
+									<h2 class="sub-title">Suggestions</h2>
+									<p class="suggestion-subtext">
+										Have feedback, ideas, or something you'd
+										like to see here? I'd love to hear it!
+									</p>
+									<form class="suggestion-form">
+										<input
+											type="text"
+											placeholder="Your Name (Optional)"
+										/>
+										<input
+											type="email"
+											placeholder="Your Email (Optional)"
+										/>
+										<textarea
+											rows="5"
+											placeholder="Your Suggestion"
+											required
+										></textarea>
+										<button type="submit">
+											Send Suggestion
+										</button>
+										<span id="msg1"
+											>Thank you for your feedback!</span
+										>
+									</form>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<!-- ---------------------------copyright section---------------------------------- -->
+
+			<div class="copyright">
+				<p>
+					Made with
+					<i class="fa-regular fa-heart"></i> by Lakshya Madharia ©
+					2025
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+
+		<script>
+			var sidemenu = document.getElementById("sidemenu");
+
+			function openmenu() {
+				sidemenu.style.right = "0";
+			}
+			function closemenu() {
+				sidemenu.style.right = "-200px";
+			}
+		</script>
+
+		<!-- ----------- Contact Form Script ----------- -->
+		<script>
+			const contactScriptURL =
+				"https://script.google.com/macros/s/AKfycbxFbjLia9fq9mtSOcYPCjcnPCYB8VJqihS7zyHrnrJY3dFsxfuxS6GQI9BPboqdwr-2/exec";
+			const contactForm = document.forms["contact-form"];
+			const contactMsg = document.getElementById("msg");
+
+			contactForm.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(contactScriptURL, {
+					method: "POST",
+					body: new FormData(contactForm),
+				})
+					.then((response) => {
+						contactMsg.innerHTML = "Message Sent Successfully!";
+						contactMsg.style.color = "#61b752";
+						setTimeout(() => (contactMsg.innerHTML = ""), 5000);
+						contactForm.reset();
+					})
+					.catch((error) => console.error("Error!", error.message));
+			});
+		</script>
+
+		<!-- ----------- Suggestion Form Script ----------- -->
+		<script>
+			const suggestionScriptURL =
+				"https://script.google.com/macros/s/AKfycbwX1pTteTgvQ9WAw2mdVJgt8gMExOK2WxuEP0jhItivolsbmjeRJDrJQvwcGkoKPGo/exec";
+			const suggestionForm = document.forms["submit-to-google-sheet"];
+			const suggestionMsg = document.getElementById("msg1");
+
+			suggestionForm.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(suggestionScriptURL, {
+					method: "POST",
+					body: new FormData(suggestionForm),
+				})
+					.then((response) => {
+						suggestionMsg.innerHTML =
+							"Thank you for your suggestion!";
+						suggestionMsg.classList.add("active");
+						setTimeout(function () {
+							suggestionMsg.classList.remove("active");
+							suggestionMsg.innerHTML = "";
+						}, 5000);
+						suggestionForm.reset();
+					})
+					.catch((error) => console.error("Error!", error.message));
+			});
+		</script>
+	<!-- --------------------------Reset form-------------------------------------- -->
+		<script>
+			const form = document.querySelector(".suggestion-form");
+			const msg1 = document.getElementById("msg1");
+
+			form.addEventListener("submit", function (e) {
+				e.preventDefault(); 
+				msg1.classList.add("active"); 
+				form.reset()
+				setTimeout(() => {
+					msg1.classList.remove("active");
+				}, 3000);
+			});
+		</script>
+	</body>
+</html>

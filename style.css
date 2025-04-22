@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .articles-header {
+    background-color: #9b87f5;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    animation: slideDown 0.6s ease-out;
+  }
+  
+  .articles-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  /* Articles Container */
+  .articles-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Article Cards */
+  .article-card {
+    background-color: #f9f6ff;
+    border-left: 5px solid #6f4eff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(111, 78, 255, 0.2);
+  }
+  
+  .article-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #6f4eff;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .article-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Read More Link */
+  .read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #6f4eff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    color: #4c3acb;
+  }
+  
+  .read-more.disabled {
+    pointer-events: none;
+    color: #bbb;
+  }
+  
+  /* More Soon Notice */
+  .more-soon {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  
+  /* Back Button */
+  .back-btn {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .back-btn a {
+    background-color: #6f4eff;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn a:hover {
+    background-color: #5a3edb;
+  }
+  
+  /* Footer */
+  .articles-footer {
+    background-color: #30236e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .articles-header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .article-card h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
